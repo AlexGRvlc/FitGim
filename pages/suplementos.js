@@ -62,12 +62,7 @@ export async function getStaticProps() {
   }
 }
 
-
-
-
-
-
-// export default Suplementos;
+export default Suplementos;
 
 // export async function getStaticProps() {
 //   try {
