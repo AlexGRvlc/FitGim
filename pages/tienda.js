@@ -3,7 +3,7 @@ import Suplemento from "../components/suplemento";
 import Layout from "../components/layout-tienda";
 import styles from "../styles/tienda-global.module.css";
 
-const Suplementos = ({ suplementos }) => {
+const Tienda = ({ suplementos }) => {
   return (
     <Layout
       title={"Suplementos Deportivos"}
@@ -11,16 +11,24 @@ const Suplementos = ({ suplementos }) => {
     >
       <Header titulo={"NUESTROS PRODUCTOS"} />
 
+
+      <div className={`${styles.grid}`}>
+      {suplementos?.map((suplemento) => (
+          <Suplemento key={suplemento.id} suplemento={suplemento.attributes} />
+        ))}
+      </div>
+
+{/* 
       <div className={`${styles.grid}`}>
         {suplementos?.map((suplemento) => (
           <Suplemento key={suplemento.id} suplemento={suplemento.attributes} />
         ))}
-      </div>
+      </div> */}
     </Layout>
   );
 };
 
-export default Suplementos;
+export default Tienda;
 
 export async function getStaticProps() {
   const respuesta = await fetch(
@@ -32,5 +40,13 @@ export async function getStaticProps() {
     props: {
       suplementos,
     },
+    revalidate: 60,
+
   };
 }
+
+
+
+
+
+
