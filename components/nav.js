@@ -88,9 +88,9 @@ export default function Nav() {
           <li>
             <Link
               className={
-                location === "/Tienda" ? styles.links__location : styles.links
+                location === "/tienda" ? styles.links__location : styles.links
               }
-              href="/Tienda"
+              href="/tienda"
             >
               Tienda
             </Link>

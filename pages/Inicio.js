@@ -111,7 +111,7 @@ const Inicio = () => {
               obcaecati ex culpa nesciunt sunt sint!
             </p>
             <div className="">
-              <Link href={"/Tienda"}>
+              <Link href={"/tienda"}>
                 <button className="btn btn__hov__2 ">Entra</button>
               </Link>
             </div>

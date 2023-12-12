@@ -123,7 +123,6 @@ export async function getServerSideProps({params: { url}}) {
          `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
        );
   const { data: suplemento } = await respuesta.json()
-  console.log(suplemento)
   return {
     props: {
       suplemento
