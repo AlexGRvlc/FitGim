@@ -30,20 +30,60 @@ const Tienda = ({ suplementos }) => {
 
 export default Tienda;
 
+
 export async function getStaticProps() {
-  const respuesta = await fetch(
-    `${process.env.API_URL}/suplementos?populate=imagen`
-  );
-  const { data: suplementos } = await respuesta.json();
+  try {
+    const respuesta = await fetch(
+      `${process.env.API_URL}/suplementos?populate=imagen`
+    );
+    
+    if (!respuesta.ok) {
+      throw new Error(`Failed to fetch data. Status: ${respuesta.status}`);
+    }
 
-  return {
-    props: {
-      suplementos,
-    },
-    revalidate: 60,
+    const { data: suplementos } = await respuesta.json();
 
-  };
+    return {
+      props: {
+        suplementos,
+      },
+      revalidate: 60,
+    };
+  } catch (error) {
+    console.error('Error fetching data:', error.message);
+
+    return {
+      props: {
+        suplementos: [],
+      },
+      revalidate: 60,
+    };
+  }
 }
+
+
+
+
+
+
+
+
+
+
+// export async function getStaticProps() {
+//   const respuesta = await fetch(
+//     `${process.env.API_URL}/suplementos?populate=imagen`
+//   );
+//   const { data: suplementos } = await respuesta.json();
+
+//   return {
+//     props: {
+//       suplementos,
+//     },
+//     revalidate: 60,
+
+//   };
+// }
 
 
 
