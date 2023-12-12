@@ -3,12 +3,13 @@ import styles from "../styles/form.module.css";
 
 const Form = () => {
   const [mensaje, setMensaje] = useState("");
+  const [entrada, setEntrada] = useState(false);
   const [entradaCorrecta, setEntradaCorrecta] = useState(false);
   const [mensajeError, setMensajeError] = useState("");
 
   const handlerSubmit = async (e) => {
     e.preventDefault();
-
+    setEntrada(true);
     const data = new FormData(e.target);
     const response = await fetch(e.target.action, {
       method: "POST",
@@ -45,10 +46,14 @@ const Form = () => {
   return (
     <>
       <div>
-        {entradaCorrecta ? (
-          <p className={styles.mensajeBienvenida}>{mensaje}</p>
-        ) : (
-          <p className={styles.mensajeError}>{mensajeError}</p>
+        {entrada && (
+          <div>
+            {entradaCorrecta ? (
+              <p className={styles.mensajeBienvenida}>{mensaje}</p>
+            ) : (
+              <p className={styles.mensajeError}>{mensajeError}</p>
+            )}
+          </div>
         )}
       </div>
 

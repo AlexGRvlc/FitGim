@@ -18,13 +18,6 @@ const Suplementos = ({ suplementos }) => {
     ))}
   </div>
 )}
-
-
-      {/* <div className={styles.grid}>
-        {suplementos?.map((suplemento) => (
-          <Suplemento key={suplemento.id} suplemento={suplemento.attributes} />
-        ))}
-      </div> */}
     </Layout>
   );
 };
@@ -63,27 +56,4 @@ export async function getStaticProps() {
 }
 
 export default Suplementos;
-
-// export async function getStaticProps() {
-//   try {
-//     const respuesta = await fetch(
-//       `${process.env.API_URL}/suplementos?populate=imagen`
-//     );
-//     const { data: suplementos } = await respuesta.json();
-
-//     return {
-//       props: {
-//         suplementos,
-//       },
-//     };
-//   } catch (error) {
-//     console.error("Error fetching data:", error);
-//     return {
-//       props: {
-//         suplementos: [],
-//       },
-//       revalidate: 60,
-//     };
-//   }
-// }
 
