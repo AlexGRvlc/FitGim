@@ -1,0 +1,34 @@
+.tienda {
+    background-color: #000;
+    margin: 5px;
+    padding: 5px;
+  }
+  
+  .container__tienda {
+      height: 500px;
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  .suplementos {
+      border: 2px solid #FFF;
+      width: 100%;
+      /* background-image: url('../public/images/tienda-ropa.jpg'); */
+      /* background-size: contai; */
+    }
+    
+
+  .ropa {
+    border: 2px solid #FFF;
+  }
+  
+  .img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 500px;
+  }
+  
+  .tienda__info {
+    padding: 15px 75px;
+  }

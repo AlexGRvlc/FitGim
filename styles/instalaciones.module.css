@@ -1,0 +1,81 @@
+.c__instalaciones {
+  text-align: center;
+}
+
+.instalaciones {
+  width: 70%;
+  margin: 0 auto;
+  background-color: #fff;
+}
+
+.caja__instalaciones {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+
+.info {
+  width: 50%;
+  padding: 0;
+  height: 450px;
+}
+
+.info h3 {
+  font-size: 60px;
+  font-weight: 800;
+  text-align: center;
+  padding-top: 15%;
+}
+
+.info p {
+  font-size: 20px;
+  font-weight: 800;
+  text-align: center;
+  padding: 5% 5%;
+  text-align: justify;
+}
+
+.container__img {
+  width: 50%;
+  height: auto;
+}
+
+.img {
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .instalaciones {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .info {
+    width: 100%;
+  }
+}
+
+/* .zoomed {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(2.5);
+  z-index: 100;
+} */
+
+/* .zoomed__2 {
+  transform: translate(50%, -50%) scale(2.5);
+  z-index: 100;
+} */
+
+/* .overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 99; 
+}  */

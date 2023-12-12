@@ -1,0 +1,48 @@
+.suplemento__container {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1rem;
+    align-items: center;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+.container {
+    padding: 1rem;
+}
+.container h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0;
+    text-align:center;
+}
+.descripcion {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    overflow: hidden;
+    font-size: 20px;
+}
+.precio {
+    
+    font-size: 25px;
+    margin: 0;
+    font-weight: 900;
+    text-align: center;
+}
+.enlace {
+    margin-top: 2rem;
+    display: block;
+    background-color: #000;
+    text-decoration: none;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    color: #00f622;
+    border-radius: 15px;
+}
+.enlace:hover {
+    background-color:#00f622;
+    color: #000;
+}

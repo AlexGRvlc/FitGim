@@ -1,0 +1,53 @@
+.header {
+  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text__header {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .header {
+    width: 100%;
+  }
+
+  .text__header {
+    font-size: 50px;
+  }
+}
+
+
+.tienda {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text__tienda {
+  position: absolute;
+  left: 50%;
+  top: 35%;
+  transform: translate(-50%, -50%);
+  font-size: 70px;
+  font-weight: bolder;
+}
+
+@media (max-width: 768px) {
+  .tienda {
+    width: 100%;
+  }
+
+  .text__tienda {
+    font-size: 50px;
+  }
+}

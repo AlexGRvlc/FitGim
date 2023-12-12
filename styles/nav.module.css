@@ -1,0 +1,107 @@
+
+.nav__top {
+  background-color: #000;
+  position: fixed;
+  width: 100%;
+  min-width: 320px;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 70px;
+}
+
+.img {
+  
+  width: auto;
+  padding-left: 15px;
+  box-sizing: border-box;
+} 
+
+.nav {
+  height: auto;
+}
+  
+  .nav ul {
+    display: flex;
+  }
+  
+  .links {
+    color: #00F622;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 28px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+
+  .links__location {
+    background-color: #00F622;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 28px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .links:hover {
+    background-color: #00F622;
+    color: #000;
+    font-weight: bold;
+  }
+
+
+  /* Media Query para mostrar el menú hamburguesa en pantallas pequeñas */
+  @media screen and (max-width: 1224px) {
+    .nav__top {
+      max-width: 1224px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .nav__top {
+        max-width: 768px;
+      }
+    }
+
+    @media screen and (max-width: 412px) {
+      .nav__top {
+        max-width: 412px;
+      }
+    }
+    
+    .nav ul {
+      flex-direction: column;
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background-color: #333;
+      display: none;
+      text-align: center; 
+    }
+
+    .nav.showMobileMenu ul {
+      display: flex;
+    }
+
+    .menuToggle {
+      display: flex;
+      flex-direction: column;
+      cursor: pointer;
+      align-items: flex-end; /* Alinea el botón hamburguesa a la derecha */
+      margin-right: 20px; /* Ajusta el margen derecho para evitar superposiciones */
+      margin-top: 10px; /* Ajusta el margen superior para centrar verticalmente */
+    }
+
+    .menuToggle span {
+      height: 2px;
+      width: 25px;
+      background-color: #FFF;
+      margin-bottom: 5px;
+      display: block;
+    }
+  }
