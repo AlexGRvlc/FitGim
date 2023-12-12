@@ -107,7 +107,7 @@ export async function getStaticPaths() {
 // paths pasan automaticamente a getStaticProps
 export async function getStaticProps({ params: { url } }) {
   const respuesta = await fetch(
-    `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
+    `${process.env.API_URL}/suplementos?filters[url]=http://localhost:1337/api&populate=imagen`
   );
   const { data: suplemento } = await respuesta.json();
 
