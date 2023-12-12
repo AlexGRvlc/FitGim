@@ -1,5 +1,5 @@
-import Layout from "@/components/layout";
-import Header from "@/components/header";
+import Layout from "../components/layout";
+import Header from "../components/header";
 import fondo from "../public/images/fondo-bonos.webp";
 import styles from "../styles/bonos.module.css";
 

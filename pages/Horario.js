@@ -1,5 +1,5 @@
-import Layout from "@/components/layout";
-import Header from "@/components/header";
+import Layout from "../components/layout";
+import Header from "../components/header";
 import PDFViewer from "../components/PDFViewer";
 import fondo from "../public/images/fondo-horario.webp";
 import sytles from "../styles/horario.module.css";

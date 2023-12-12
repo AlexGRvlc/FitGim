@@ -1,6 +1,6 @@
-import Layout from "@/components/layout";
-import Header from "@/components/header-tienda";
-import Formulario from "@/components/form";
+import Layout from "../components/layout";
+import Header from "../components/header-tienda";
+import Formulario from "../components/form";
 import styles from '../styles/socios.module.css';
 
 const Socios = () => {

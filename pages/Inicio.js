@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Layout from "@/components/layout";
+import Layout from "../components/layout";
 import styles from "../styles/inicio.module.css";
 import Image from "next/image";
 import tienda from "../public/images/ropa.webp";

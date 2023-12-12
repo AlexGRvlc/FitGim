@@ -1,6 +1,6 @@
 // import { useState, useEffect } from "react";
-import Layout from "@/components/layout";
-import Header from "@/components/header";
+import Layout from "../components/layout";
+import Header from "../components/header";
 import fondo from "../public/images/fondo-instalaciones.webp";
 import styles from "../styles/instalaciones.module.css";
 import Image from "next/image";

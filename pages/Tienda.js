@@ -1,6 +1,6 @@
-import Header from "@/components/header-tienda";
-import Suplemento from "@/components/suplemento";
-import Layout from "@/components/layout-tienda";
+import Header from "../components/header-tienda";
+import Suplemento from "../components/suplemento";
+import Layout from "../components/layout-tienda";
 import styles from "../styles/tienda-global.module.css";
 
 const Suplementos = ({ suplementos }) => {

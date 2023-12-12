@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Layout from "@/components/layout-tienda";
+import Layout from "../../components/layout-tienda";
 import Image from "next/image";
 import styles from "../../styles/producto.module.css";
 

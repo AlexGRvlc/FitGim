@@ -1,5 +1,5 @@
-import Suplemento from "@/components/suplemento";
-import Layout from "@/components/layout-tienda";
+import Suplemento from "../components/suplemento";
+import Layout from "../components/layout-tienda";
 import styles from "../styles/producto.module.css";
 
 

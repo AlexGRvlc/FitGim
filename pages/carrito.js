@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import Layout from "@/components/layout-tienda";
-import Header from "@/components/header-tienda";
+import Layout from "../components/layout-tienda";
+import Header from "../components/header-tienda";
 import styles from "../styles/producto.module.css";
 
 import Image from "next/image";
