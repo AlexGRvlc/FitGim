@@ -50,4 +50,20 @@
   .text__tienda {
     font-size: 50px;
   }
+
+  .container {
+   overflow-x: hidden; 
+  }
+}
+
+@media ( max-width: 412px){
+  .container  
+  {overflow-x: hidden;
+}
+
+@media ( max-width: 360px){
+  .container  {
+    overflow-x: hidden;
+  }
+}
 }
