@@ -88,32 +88,45 @@ const Producto = ({ suplemento, agregarCarrito, eliminarCarrito }) => {
 
 export default Producto;
 
-export async function getStaticPaths() {
-  const respuesta = await fetch(`http://localhost:1337/api/suplementos`);
-  const { data } = await respuesta.json();
+// export async function getStaticPaths() {
+//   const respuesta = await fetch(`${process.env.API_URL}/suplementos`);
+//   const { data } = await respuesta.json();
 
-  const paths = data.map((suplemento) => ({
-    params: {
-      url: suplemento.attributes.url,
-    },
-  }));
+//   const paths = data.map((suplemento) => ({
+//     params: {
+//       url: suplemento.attributes.url,
+//     },
+//   }));
 
-  return {
-    paths,
-    fallback: false,
-  };
-}
+//   return {
+//     paths,
+//     fallback: false,
+//   };
+// }
 
-// paths pasan automaticamente a getStaticProps
-export async function getStaticProps({ params: { url } }) {
-  const respuesta = await fetch(
-    `http://localhost:1337/api/suplementos?filters[url]=${url}&populate=imagen`
-  );
-  const { data: suplemento } = await respuesta.json();
+// // paths pasan automaticamente a getStaticProps
+// export async function getStaticProps({ params: { url } }) {
+//   const respuesta = await fetch(
+//     `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
+//   );
+//   const { data: suplemento } = await respuesta.json();
 
+//   return {
+//     props: {
+//       suplemento,
+//     },
+//   };
+// }
+
+export async function getServerSideProps({params: { url}}) {
+  const respuesta  = await fetch (
+         `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
+       );
+  const { data: suplemento } = await respuesta.json()
+  console.log(suplemento)
   return {
     props: {
-      suplemento,
-    },
-  };
+      suplemento
+    }
+  }
 }
