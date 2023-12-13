@@ -52,6 +52,7 @@
   @media ( max-width: 1224px){
     .container  {
       flex-direction: column;
+       overflow: hidden; 
     }
 
     .contacto__info  {
@@ -95,6 +96,7 @@
 
   @media ( max-width: 360px){
     .container  {
+      min-width: 412px;
       flex-direction: column;
     }
 

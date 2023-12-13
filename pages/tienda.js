@@ -17,13 +17,6 @@ const Tienda = ({ suplementos }) => {
           <Suplemento key={suplemento.id} suplemento={suplemento.attributes} />
         ))}
       </div>
-
-{/* 
-      <div className={`${styles.grid}`}>
-        {suplementos?.map((suplemento) => (
-          <Suplemento key={suplemento.id} suplemento={suplemento.attributes} />
-        ))}
-      </div> */}
     </Layout>
   );
 };

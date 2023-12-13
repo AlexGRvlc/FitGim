@@ -1,9 +1,6 @@
 .c__actividades {
-/* display: flex;   */
 text-align: center;
 } 
-
-
 
 .actividades {
   width: 70%;
@@ -60,6 +57,18 @@ text-align: center;
 
   .info{
     width: 100%;
+  }
+
+  @media (max-width: 400px) {
+    .info h3 {
+      font-size: 45px;
+      font-weight: 800; 
+    }
+    
+    .info p {
+      font-size: 20px;
+      font-weight: 800;
+    }
   }
 
 

@@ -1,5 +1,5 @@
 .footer {
-  color: white;
+  color: #FFF;
   padding: 90px 0;
   width: 100%;
   display: flex;
@@ -12,6 +12,10 @@
   width: 50%;
   padding: 0 20px;
   align-items: center;
+}
+
+.redes {
+  text-align: center;
 }
 
 .redes__sociales h3 {
@@ -67,6 +71,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    width: 100%;
   }
 
   .redes ul li {
@@ -79,5 +84,42 @@
     margin-bottom: 20px;
     align-items: center;
     padding: 0;
+  }
+  .redes{
+    text-align: center;
+  }
+}
+
+@media (max-width: 360px){
+  .footer{
+    width: 100%;
+    color: blue;
+    overflow-x: hidden;
+  }
+
+  .redes {
+    text-align: center;
+  }
+}
+
+@media (max-width: 412px){
+  .footer{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .redes {
+    text-align: center;
+  }
+}
+
+@media (max-width: 810px){
+  .footer{
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .redes {
+    text-align: center;
   }
 }

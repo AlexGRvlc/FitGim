@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .text__header {
@@ -273,3 +274,29 @@
     margin: 5px 0 50px 0;
   }
 }
+
+@media (max-width: 412px) {
+  .container{
+     width: 100%;
+
+  }
+  .header {
+    width: width 100px;
+  }
+}
+
+@media (max-width: 360px) {
+  .comtainer{
+     width: 100%;
+
+  }
+  .header {
+    width: 100%;
+  }
+  .principales {
+
+    width: 100%;
+  }
+}
+
+

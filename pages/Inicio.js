@@ -27,6 +27,7 @@ const Inicio = () => {
         </header>
 
         {/* ACTIVIDADES - INSTALACIONES - BONOS */}
+        
         <section className={styles.principales}>
           <div className={styles.titulo}>
             <h2 className="color-1 fs-50 mb-10">EXPLORA</h2>

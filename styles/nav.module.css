@@ -57,28 +57,28 @@
 
   @media screen and (max-width: 1224px) {
     .nav__top {
-      max-width: 1224px;
+      max-width: 100%;
     }
 
     @media screen and (max-width: 768px) {
       .nav__top {
-        max-width: 768px;
+        width: 100%;
       }
     }
 
-    @media screen and (max-width: 412px) {
+    @media screen and (max-width: 360px) {
       .nav__top {
-        width: 420px;
+        width: 100;
       }
     }
     @media screen and (max-width: 412px) {
       .comtainer{
         overflow-x: hidden;
-        width: 100%;
+         /* width: 100%; */
 
       }
       .nav__top {
-        max-width: 360px;
+        width: width 100px;
       }
     }
     
