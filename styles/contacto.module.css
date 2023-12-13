@@ -73,6 +73,7 @@
   @media ( max-width: 412px){
     .container  {
       flex-direction: column;
+      overflow: hidden;
     }
 
     .contacto__info  {
