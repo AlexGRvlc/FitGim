@@ -8,39 +8,49 @@ const Form = () => {
   const [mensajeError, setMensajeError] = useState("");
 
   const handlerSubmit = async (e) => {
-    e.preventDefault();
     setEntrada(true);
-    const data = new FormData(e.target);
-    const response = await fetch(e.target.action, {
-      method: "POST",
-      body: data,
-      headers: {
-        Accept: "app/json",
-      },
-    });
-    const result = await response.text();
-    if (!response.ok) {
-      setMensaje(result.errors.map((error) => error.mensaje).join(", "));
-      return false;
+    try {
+      e.preventDefault();
+      const data = new FormData(e.target);
+      const response = await fetch(e.target.action, {
+        method: "POST",
+        body: data,
+        headers: {
+          Accept: "app/json",
+        },
+      });
+
+      if (!response.ok) {
+        const result = await response.json();
+        setMensaje(result.errors.map((error) => error.mensaje).join(", "));
+        return false;
+      }
+
+      const nombre = data.get("nombre");
+      const socio = data.get("socio");
+      const apellido = data.get("apellido");
+
+      const datos = {
+        nombre,
+        apellido,
+        socio,
+      };
+
+      if (Object.values(datos).includes("")) {
+        setMensajeError("Todos los campos son obligatorios");
+        return;
+      }
+
+      setMensaje(`Saludos ${nombre}`);
+      setEntradaCorrecta(true);
+    } catch (error) {
+      console.error("Error en la solicitud:", error);
+      setMensajeError(
+        "Hubo un error al procesar la solicitud. Por favor, inténtalo de nuevo más tarde."
+      );
+    } finally {
+      setEntrada(false);
     }
-
-    const nombre = data.get("nombre");
-    const socio = data.get("socio");
-    const apellido = data.get("apellido");
-
-    const datos = {
-      nombre,
-      apellido,
-      socio,
-    };
-
-    if (Object.values(datos).includes("")) {
-      setMensajeError("Todos los campos son obligatorios");
-      return;
-    }
-
-    setMensaje(`Saludos ${nombre}`);
-    setEntradaCorrecta(true);
   };
 
   return (
