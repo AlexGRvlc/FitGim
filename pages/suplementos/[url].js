@@ -88,44 +88,47 @@ const Producto = ({ suplemento, agregarCarrito, eliminarCarrito }) => {
 
 export default Producto;
 
-// export async function getStaticPaths() {
-//   const respuesta = await fetch(`${process.env.API_URL}/suplementos`);
-//   const { data } = await respuesta.json();
 
-//   const paths = data.map((suplemento) => ({
-//     params: {
-//       url: suplemento.attributes.url,
-//     },
-//   }));
+export async function getServerSideProps({ params: { url } }) {
+  try {
+    const respuesta = await fetch(
+      `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
+    );
 
-//   return {
-//     paths,
-//     fallback: false,
-//   };
-// }
+    if (respuesta.status === 504) {
+      console.error('Error 504: Gateway Timeout');
 
-// // paths pasan automaticamente a getStaticProps
-// export async function getStaticProps({ params: { url } }) {
-//   const respuesta = await fetch(
-//     `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
-//   );
-//   const { data: suplemento } = await respuesta.json();
+      // Esperar 5 segundos antes de volver a intentar la solicitud
+      await new Promise(resolve => setTimeout(resolve, 5000));
 
-//   return {
-//     props: {
-//       suplemento,
-//     },
-//   };
-// }
+      // Volver a intentar la solicitud
+      const retryResponse = await fetch(
+        `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
+      );
 
-export async function getServerSideProps({params: { url}}) {
-  const respuesta  = await fetch (
-         `${process.env.API_URL}/suplementos?filters[url]=${url}&populate=imagen`
-       );
-  const { data: suplemento } = await respuesta.json()
-  return {
-    props: {
-      suplemento
+      const { data: suplemento } = await retryResponse.json();
+
+      return {
+        props: {
+          suplemento,
+        },
+      };
     }
+
+    const { data: suplemento } = await respuesta.json();
+
+    return {
+      props: {
+        suplemento,
+      },
+    };
+  } catch (error) {
+    console.error('Ocurrió un error:', error.message);
+
+    return {
+      props: {
+        error: 'Ocurrió un error al obtener los datos',
+      },
+    };
   }
 }

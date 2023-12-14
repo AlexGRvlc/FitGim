@@ -27,8 +27,8 @@ export default Tienda;
 export async function getStaticProps() {
   try {
     const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Timeout')), 30000) 
-    );
+      setTimeout(() => reject(new Error('Timeout')), 10000) 
+      );
 
     const respuesta = await Promise.race([
       fetch(`${process.env.API_URL}/suplementos?populate=imagen`),
@@ -54,7 +54,7 @@ export async function getStaticProps() {
       props: {
         suplementos,
       },
-      revalidate: 60,
+      revalidate: 20,
     };
   } catch (error) {
     console.error("Error al obtener suplementos:", error);
