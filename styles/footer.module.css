@@ -90,10 +90,16 @@
   }
 }
 
+.image {
+  background-color: #fff;
+  border-radius: 50%;
+  padding: 1px;
+}
+
 @media (max-width: 360px){
   .footer{
     width: 100%;
-    color: blue;
+    color: #FFF;
     overflow-x: hidden;
   }
 
