@@ -18,7 +18,7 @@ export default function App({ Component, pageProps }) {
   }, [carrito]);
 
   const agregarCarrito = (suplemento) => {
-    // Comprobar si la suplemento ya esta en el carrito
+    // Comprobar si el suplemento ya esta en el carrito
     if (
       carrito.some((suplementoState) => suplementoState.id === suplemento.id)
     ) {
@@ -30,7 +30,7 @@ export default function App({ Component, pageProps }) {
         return suplementoState;
       });
       // Se asigna al array
-      setCarrito([...carritoActualizado]);
+      setCarrito([...carritoActualizado]);  
       localStorage.setItem("carrito", JSON.stringify(carrito));
     } else {
       // En caso de que el suplemento no exista, es nuevo y se agrega

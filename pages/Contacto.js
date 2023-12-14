@@ -33,7 +33,6 @@ const Contacto = () => {
           <div className={`${styles.container__map}pd0 mt-70 fondo-2`}>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3080.6522218165123!2d-0.3983448233015835!3d39.454591871610404!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd604f182a0e3cab%3A0x2e7afc21b4406a81!2sCalle%20Juan%20de%20Garay%2C%2025%2C%20Patraix%2C%2046017%20Valencia!5e0!3m2!1ses!2ses!4v1702356271863!5m2!1ses!2ses"
-              // className={styles.map}
               width="1100"
               height="600"
               allowfullscreen=""

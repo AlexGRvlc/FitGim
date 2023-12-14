@@ -22,43 +22,10 @@ const Suplementos = ({ suplementos }) => {
   );
 };
 
-// export async function getStaticProps() {
-//   try {
-//     const respuesta = await fetch(
-//       `${process.env.API_URL}/suplementos?populate=imagen`
-//     );
-
-//     if (!respuesta.ok) {
-//       throw new Error(
-//         `No se pudo obtener la lista de suplementos. Status: ${respuesta.status}`
-//       );
-//     }
-
-//     const { data: suplementos } = await respuesta.json();
-
-//     return {
-//       props: {
-//         suplementos,
-//       },
-//       revalidate: 60,
-//     };
-//   } catch (error) {
-//     console.error("Error fetching suplementos:", error);
-//     return {
-//       props: {
-//         suplementos: [],
-//       },
-//       revalidate: 60,
-//     };
-//   }
-// }
-
-
-
 export async function getStaticProps() {
   try {
     const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Timeout')), 10000) // 10 segundos
+      setTimeout(() => reject(new Error('Timeout')), 10000) 
     );
 
     const respuesta = await Promise.race([
