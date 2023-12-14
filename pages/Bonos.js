@@ -18,21 +18,17 @@ const Bonos = () => {
 
         <div className={` ${styles.container} text-center`}>
           <div className={`${styles.caja__bonos} fondo-4`}>
-            <h1 className="fw-bold">ACTIVIDADES</h1>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-              voluptatibus eveniet necessitatibus amet voluptas.
-            </p>
+            <h1 className="fw-bold">MAÑANAS</h1>
+            <p>Todas las instalaciones y actividades dirigidas </p>
 
             <div className="text-center">
               <button className="btn">ALTA</button>
             </div>
           </div>
           <div className={`${styles.caja__bonos} fondo-5`}>
-            <h1>INSTALACIONES</h1>
+            <h1>COMPLETO</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-              voluptatibus eveniet necessitatibus amet voluptas.
+              Todas las instalaciones y actividades dirigidas horario completo
             </p>
 
             <div className="text-center">
@@ -40,10 +36,10 @@ const Bonos = () => {
             </div>
           </div>
           <div className={`${styles.caja__bonos} fondo-6`}>
-            <h1>OFERTAS</h1>
+            <h1>ANUAL</h1>
             <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-              voluptatibus eveniet necessitatibus amet voluptas.
+              Todas las instalaciones y actividades dirigidas horario completo
+              con un descuento especial.
             </p>
 
             <div className="text-center">

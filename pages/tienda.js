@@ -27,7 +27,7 @@ export default Tienda;
 export async function getStaticProps() {
   try {
     const timeoutPromise = new Promise((_, reject) =>
-      setTimeout(() => reject(new Error('Timeout')), 10000) 
+      setTimeout(() => reject(new Error('Timeout')), 30000) 
     );
 
     const respuesta = await Promise.race([
@@ -62,7 +62,7 @@ export async function getStaticProps() {
       props: {
         suplementos: [],
       },
-      revalidate: 10,
+      revalidate: 20,
     };
   }
 }

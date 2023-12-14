@@ -44,7 +44,8 @@
 .caja__priori {
   background-color: rgba(38, 38, 38, 0.62);
   margin: 25px;
-  padding: 3% 0;
+  padding: 3% 2%;
+  box-sizing: border-box;
   flex-direction: column;
   text-align: center;
   display: flex;
@@ -57,20 +58,23 @@
 .caja__priori__2 {
   background-color: rgba(38, 38, 38, 0.62);
   margin: 25px;
-  padding: 3% 0;
   flex-direction: column;
   text-align: center;
   display: flex;
   justify-content: space-evenly;
   color: white;
   height: 405px;
-  width: 305px;
+  width: 305px;  
+  padding: 3% 2%;
+  box-sizing: border-box;
+
 }
 
 .caja__priori__3 {
   background-color: rgba(38, 38, 38, 0.62);
   margin: 25px;
-  padding: 3% 0;
+  padding: 3% 2%;
+  box-sizing: border-box;
   flex-direction: column;
   text-align: center;
   display: flex;

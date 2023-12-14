@@ -2,6 +2,7 @@ import Head from "next/head";
 import Nav from "./nav-tienda";
 import Header from "./header-tienda";
 import Footer from "./footer";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const layoutTienda = ({ children, title, description }) => {
   return (
@@ -14,6 +15,7 @@ const layoutTienda = ({ children, title, description }) => {
       <Nav />
 
       <Header />
+      <SpeedInsights/>
 
       {children}
 

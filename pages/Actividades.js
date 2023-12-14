@@ -26,9 +26,9 @@ const actividades = () => {
               <h3>Core</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                CORE significa Núcleo o Centro. Entrenamiento de 30 minutos
+                donde se tonifica la zona del abdomen, lumbares y glúteos,
+                además de aumentar la fuerza funcional.
               </p>
             </div>
 
@@ -37,7 +37,6 @@ const actividades = () => {
             </div>
           </div>
         </div>
-
 
         <div className={`${styles.actividades}`}>
           <div className={`${styles.caja__actividades} `}>
@@ -48,9 +47,9 @@ const actividades = () => {
               <h3>Pilates</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                El método Pilates es un conjunto de ejercicios cuya finalidad es
+                la de ejercitar el cuerpo y la mente, ya que mediante su
+                práctica, además de mejorar nuestra condición física.
               </p>
             </div>
           </div>
@@ -62,9 +61,9 @@ const actividades = () => {
               <h3>Tonificacion</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                60 min Los ejercicios de tonificación benefician la función
+                metabólica del organismo, ya que el porcentaje de masa muscular
+                aumenta, pero no de forma excesiva.
               </p>
             </div>
 
@@ -78,7 +77,6 @@ const actividades = () => {
           </div>
         </div>
 
-
         <div className={`${styles.actividades}`}>
           <div className={`${styles.caja__actividades} `}>
             <div className={styles.container__img}>
@@ -88,14 +86,13 @@ const actividades = () => {
               <h3>GAP</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                El GAP es una modalidad del fitness cuyas siglas significan
+                Glúteos, Abdominales y Piernas. Practicar GAP sirve para
+                fortalecer y tonificar esas tres partes del cuerpo.
               </p>
             </div>
           </div>
         </div>
-
 
         <div className={`${styles.actividades}`}>
           <div className={`${styles.caja__actividades} mt-5`}>
@@ -103,9 +100,9 @@ const actividades = () => {
               <h3>TRX</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                Cuando se usa el TRX, el porcentaje deseado del peso corporal
+                recae sobre la zona corporal deseada y con una dinámica de
+                movimiento de ejercicio.
               </p>
             </div>
 
@@ -114,7 +111,6 @@ const actividades = () => {
             </div>
           </div>
         </div>
-
 
         <div className={`${styles.actividades}`}>
           <div className={`${styles.caja__actividades} `}>
@@ -125,9 +121,9 @@ const actividades = () => {
               <h3>Yoga</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                60 min El yoga mejora la salud de quienes lo practican, gracias
+                a sus múltiples beneficios. Las posturas de yoga no dejan de
+                sorprender por los beneficios físicos, mentales y espirituales.
               </p>
             </div>
           </div>

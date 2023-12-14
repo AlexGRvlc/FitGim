@@ -1,11 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
 import styles from "../styles/footer.module.css";
-import facebook  from "../public/images/facebook.svg";
-import twitter  from "../public/images/twitter.svg";
-import  instagram  from "../public/images/instagram.svg";
-import  youtube  from "../public/images/youtube.svg";
-import  snapchat  from "../public/images/snapchat.svg";
+import facebook from "../public/images/facebook.svg";
+import twitter from "../public/images/twitter.svg";
+import instagram from "../public/images/instagram.svg";
+import youtube from "../public/images/youtube.svg";
+import snapchat from "../public/images/snapchat.svg";
 
 export default function Footer() {
   return (
@@ -14,10 +14,9 @@ export default function Footer() {
         <div className={styles.redes__sociales}>
           <h3>REDES SOCIALES</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis,
-            dolore. Lorem ipsum dolor sit, amet Lorem, ipsum dolor. dolore.
-            Lorem ipsum dolor sit, amet Lorem, ipsum dolor. dolore. Lorem ipsum
-            dolor sit, amet Lorem, ipsum dolor.
+            Ponte al día de todas nuestras novedades siguiendo nuestros canales
+            y plataformas en las redes sociales. Por que tu opinion nos ayda a
+            mejorar y a crecer juntos.
           </p>
 
           <div className={styles.redes}>
@@ -28,7 +27,11 @@ export default function Footer() {
                   href="https://www.facebook.com"
                   target="_blank"
                 >
-                  <Image src={facebook} className={styles.image} alt="facebook-icon" /> 
+                  <Image
+                    src={facebook}
+                    className={styles.image}
+                    alt="facebook-icon"
+                  />
                 </Link>
               </li>
               <li>
@@ -37,12 +40,20 @@ export default function Footer() {
                   href="https://www.instagram.com"
                   target="_blank"
                 >
-                <Image src={instagram} className={styles.image} alt="instagram-icon" />
+                  <Image
+                    src={instagram}
+                    className={styles.image}
+                    alt="instagram-icon"
+                  />
                 </Link>
               </li>
               <li>
                 <Link href="https://www.twitter.com" target="_blank">
-                <Image src={twitter} className={styles.image} alt="twitter-icon" /> 
+                  <Image
+                    src={twitter}
+                    className={styles.image}
+                    alt="twitter-icon"
+                  />
                 </Link>
               </li>
               <li>
@@ -51,7 +62,11 @@ export default function Footer() {
                   href="https://www.youtube.com"
                   target="_blank"
                 >
-                <Image src={youtube} className={styles.image} alt="youtube-icon" />
+                  <Image
+                    src={youtube}
+                    className={styles.image}
+                    alt="youtube-icon"
+                  />
                 </Link>
               </li>
               <li>
@@ -60,7 +75,11 @@ export default function Footer() {
                   href="https://www.snapchat.com"
                   target="_blank"
                 >
-                <Image src={snapchat} className={styles.image} alt="snapchat-icon" />
+                  <Image
+                    src={snapchat}
+                    className={styles.image}
+                    alt="snapchat-icon"
+                  />
                 </Link>
               </li>
             </ul>

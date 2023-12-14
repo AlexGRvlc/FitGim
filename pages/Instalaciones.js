@@ -22,9 +22,10 @@ const Instalaciones = () => {
               <h3>Musculacion</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                Un moderno y amplio espacio para cuidar tu cuerpo a través de la
+                actividad física. Cuenta con más de 500 metros cuadrados
+                reservados para la musculación y el fitness con máquinas de
+                última generación.
               </p>
             </div>
 
@@ -47,9 +48,9 @@ const Instalaciones = () => {
               <h3>Aeróbicos</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                La más moderna equipación para realizar todo tipo de ejercicios
+                aeróbicos también tiene cabida en nuestro centro en una gran
+                zona reservada para estas disciplinas.
               </p>
             </div>
           </div>
@@ -61,9 +62,10 @@ const Instalaciones = () => {
               <h3>Actividades</h3>
 
               <p>
-                instalaciones ipsum dolor sit amet, consectetur adipisicing
-                elit. Expedita hic in, labore molestiae mollitia commodi
-                repellendus soluta obcaecati ex culpa nesciunt sunt sint!
+                En nuestra sala de actividades monitorizadas por los mejores
+                entrenadores disponemos de 150 metros cuadrados para que el
+                espacio no sea un inconveniente para disfrutar de nuestras
+                diversas actividades.
               </p>
             </div>
 
@@ -83,9 +85,10 @@ const Instalaciones = () => {
               <h3>TRX</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                En nuestro centro apostamos por la vanguardia del deporte. Tanto
+                es así que hemos habilitado una zona entera para la práctica de
+                esta variedad deportiva que está en boca de todos en estos
+                tiempos.
               </p>
             </div>
 
@@ -104,9 +107,9 @@ const Instalaciones = () => {
               <h3>Vestuarios</h3>
 
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Expedita hic in, labore molestiae mollitia commodi repellendus
-                soluta obcaecati ex culpa nesciunt sunt sint!
+                Por supuesto contamos con amplios vestuarios con taquillas
+                espaciosas en la zona de duchas que cuenta tambiéen con una zona
+                SPA para relajar los músculos y la mente tras el entrenamiento.
               </p>
             </div>
           </div>
